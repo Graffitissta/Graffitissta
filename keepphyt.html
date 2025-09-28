@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>portfolio</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: #FFFCF2;
+      width: 100%;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      padding: 0.7rem 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #252422;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .work-list {
+      display: flex;
+      flex-direction: column;
+      gap: 160px;
+      margin-top: 40px;
+    }
+
+    .video-image {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      align-items: start;
+      gap: 50px;
+    }
+
+    .video-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Μικραίνει μόνο η εικόνα του Part 1 */
+    .video-image img.half-img {
+      width: 60%;            /* στο μισό της στήλης */
+      max-width: 100%;
+      height: auto;
+      justify-self: center;  /* κεντραρισμένη */
+      border-radius: 8px;
+    }
+
+    .video-image .text {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      text-align: left;
+      word-break: break-word;
+    }
+
+    .video-image .text b {
+      display: block;
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: #252422;
+    }
+
+    .video-image.reverse {
+      direction: rtl;
+    }
+
+    .video-image.reverse .text {
+      direction: ltr;
+    }
+
+    .footer-link {
+      display: block;
+      margin: 60px auto;
+      text-align: center;
+      color: #403D39;
+      text-decoration: none;
+      font-size: 3rem;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: .6rem;
+      background-color: #f2ecdc;
+    }
+
+    .footer-link i {
+      color: #403D39;
+      font-size: 32px;
+    }
+
+    /* Responsive: σε κινητά η εικόνα γίνεται 100% */
+    @media (max-width: 900px) {
+      .video-image {
+        grid-template-columns: 1fr;
+      }
+      .video-image img.half-img {
+        width: 100%;
+        justify-self: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>KeepPhyt</h1>
+    </div>
+  </header>
+
+  <div id="portfolio">
+    <div class="container">
+      <div class="work-list">
+
+        <!-- Project 1 -->
+        <div class="video-image">
+          <img src="55.jpg" alt="KeepPhyt Logo" class="half-img">
+          <div class="text">
+            <b>Branding & Identity</b>
+            In May 2025, in collaboration with Devocean, I designed the logo for a physiotherapy center. The logo was officially registered and became the foundation for the overall brand identity.
+            As part of the project, I also created business cards, envelopes, and letterheads, ensuring a consistent and professional visual language.
+            <br><br>
+            VIEW THE CASE STUDY HERE => <a href="https://www.dropbox.com/scl/fi/v4e7n93av0a8l9rymrxkb/logo.pdf?rlkey=742m8mtx0p3r0w07m586sp412&st=oydaz0c8&dl=0">Case Study</a>
+          </div>
+        </div>
+
+
+ <div class="video-image reverse">
+          <img src="66.jpg" alt="Normaxis Gloves Redesign">
+          <div class="text">
+            <b>Website Proposal</b>
+           Following the branding work, I developed a website design proposal for the client. The goal was to highlight the center’s professionalism while providing a clear and user-friendly navigation experience.
+The design focused on clarity, simplicity, and trustworthiness, reflecting the values and nature of the physiotherapy services.
+            <br><br>
+            VIEW THE PROTOTYPE HERE => 
+            <a href="https://www.figma.com/proto/HoBGXetWxxu2abLwBmzRmH/Untitled?node-id=1-2&t=yf7Feoav5fmrUgks-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">Figma Prototype</a>
+          </div>
+        </div>
+
+
+
+        <!-- Footer link -->
+        <a href="index.html#portfolio" class="footer-link">
+          <i class='bx bx-chevron-left'></i>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

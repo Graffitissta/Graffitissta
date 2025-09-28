@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>portfolio</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: #FFFCF2;
+      width: 100%;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      padding: 0.7rem 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #252422;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .work-list {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+      margin-top: 40px;
+    }
+
+    .video-image {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      align-items: start;
+      gap: 50px;
+    }
+
+    .video-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .video-image .text {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      text-align: left;
+      word-break: break-word;
+    }
+
+    .video-image .text b {
+      display: block;
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: #252422;
+    }
+
+    /* Για να αντιστρέφουμε τη σειρά σε συγκεκριμένα projects (εικόνα δεξιά, κείμενο αριστερά) */
+    .video-image.reverse {
+      direction: rtl;
+    }
+
+    .video-image.reverse .text {
+      direction: ltr;
+    }
+
+    .footer-link {
+      display: block;
+      margin: 60px auto;
+      text-align: center;
+      color: #403D39;
+      text-decoration: none;
+      font-size: 3rem;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: .6rem;
+      background-color: #f2ecdc;
+    }
+
+    .footer-link i {
+      color: #403D39;
+      font-size: 32px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>GMT Normaxis Projects</h1>
+    </div>
+  </header>
+
+  <div id="portfolio">
+    <div class="container">
+      <div class="work-list">
+
+        <!-- Project 1: GTM Normaxis Redesign -->
+        <div class="video-image">
+          <img src="ui3.jpg" alt="GTM Normaxis Redesign">
+          <div class="text">
+            <b>GTM Normaxis Redesign</b>
+            This was a freelance project I completed in September 2025 for Devocean. The client provided the homepage as a starting point and asked me to continue designing the remaining pages, including About Us, Services, and Contact. My goal was to extend the existing visual style while ensuring a smooth and cohesive user experience across the site. I focused on maintaining consistency, improving layout and interactions, and finding creative solutions that respected the established design framework. This project allowed me to practice problem-solving within constraints while refining my UI/UX skills.
+            <br><br>
+            VIEW THE PROTOTYPE HERE => 
+            <a href="https://www.figma.com/proto/097Ra2fZSLCUuF62J7Ldl9/Untitled?node-id=210-214&t=NIUPeNrHIarhqrL4-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=153%3A15"> Figma Prototype </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Normaxis Gloves Redesign -->
+        <div class="video-image reverse">
+          <img src="ui4.jpg" alt="Normaxis Gloves Redesign">
+          <div class="text">
+            <b>Normaxis Gloves Redesign Proposal</b>
+            Following my collaboration on the GTM Normaxis project, I worked on a redesign concept for the Normaxis Gloves website. I followed a similar aesthetic to maintain brand consistency while exploring ways to modernize the layout and highlight the products’ quality. The focus was on creating a clean, user-focused design that enhances usability and visual appeal. This project allowed me to extend the brand’s visual language and experiment with new design directions while keeping a cohesive look across related platforms.
+            <br><br>
+            VIEW THE PROTOTYPE HERE => 
+            <a href="https://www.figma.com/proto/5gd7dTCLt7Stkkd3Fsb9sT/portfolio?node-id=1-271&t=Nip1vnpJDGxC7c7L-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A271">Figma Prototype</a>
+          </div>
+        </div>
+
+        <!-- Footer link -->
+        <a href="index.html#portfolio" class="footer-link">
+          <i class='bx bx-chevron-left'></i>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
