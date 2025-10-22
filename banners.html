@@ -1,238 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  
-  
-  <title>portfolio</title>
-  <style>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="assets/css/lightbox.min.css" />
 
-    
-body {
-      font-family: "Poppins", sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      background: #FFFCF2;
-      width: 100%;
-      height: 100%;
-}
-    
-
-.container {
-      position: relative;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-
-    header {
-    padding: 0.7rem 9%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    color: #252422;
-    }
-
-    header h1 {
-      margin: 0;
-    }
-
-    .work-list{
-    display: grid;
-    grid-gap: 120px;
-    margin-top: 80px;
-    margin-bottom: 150px;
-}
-
-  .c1 {
-  grid-template-columns: 1fr;
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-
-  }
-
-
-  
-  .c1  img {
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-  }
-
-  .c2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
-  grid-gap: 120px;
-}
-
-.c2-item img {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-}
-  
-
- .work {
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
- }
-
- .work img {
-    width: 100%;
-    border-radius: 10px;
-    display: block;
- }
-
- .footer-link {
-  position: relative; /* αντί για absolute */
-  margin: 40px auto; /* κεντράρισμα με πάνω-κάτω απόσταση */
-  text-align: center;
-  color: #403D39;
-  text-decoration: none;
-  font-size: 3rem;
-  line-height: 60px;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: .6rem;
-  background-color: #f2ecdc;
-}
-
-    .footer-link i {
-      color: #403D39; ;
-      font-size: 32px ;
-    }
-
-
-    .portfolio-box .navigation button {
-    display: inline-flex;
-    padding: .4rem;
-    background: var(--second-bg-color);
-    border-radius: .6rem;
-    font-size: 3rem;
-    color: var(--disabled-color);
-    cursor: pointer;
-}
-</style>
-</head>
-<body>
-
-  <header>
-    <div class="container">
-      <h1>Banners</h1>
-    </div>
-  </header>
-
- <div id="portfolio">
-    <div class="container">
-        <div class="work-list"> 
-
-            <div class="c1">
-                <img src="el1.jpg" alt="">
-
+        <script src="main.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <title>Social Content</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="/index.html">Katerina Ailamaki</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="resume.html">Resume</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-             <div class="c1">
-                <img src="el2.jpg" alt="">
+        </header>
+        <main>
+            <section class="portfolio-single">
+                <div class="container">
+                    <div class="hero">
+                        <div class="left">
+                            <h1>Social Content</h1>
+                            <div class="subtitle">
+                               Banners & Animations
+                            </div>
+                           <br>
+                            <div class="tag">
+                                <strong>Social Media Design</strong>
+                            </div>
+                            <div class="date">
+                                <strong>Date:</strong> 2020 - Today
+                            </div>
+                            <div class="program">
+                                <strong>Program:</strong> 
+                                Illustrator, Photoshop
+                            </div>
+                        </div>
+                        <div class="right">
+                            <h2>Banners & Animations </h2>
+                            <p>
+                                I explored the visual side of social media promotion. Beyond static banners and classic ad formats, I experimented with animations and motion graphics inspired by global awareness days.
+These pieces allowed me to combine design with storytelling, finding new ways to communicate messages creatively and effectively across digital platforms.
+                            </p>
+                        </div>
+                    </div>
 
-            </div>
-             <div class="c1">
-                <img src="el3.jpg" alt="">
+                    <ul class="gallery">
+                        <li class="gallery-item">
+                            <a
+                                href="assets/img/portfolio/banners/2.jpg"
+                                data-lightbox="gallery"
+                            >
+                                <img
+                                    src="assets/img/portfolio/banners/1.jpg"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                        <li class="gallery-item">
+                            <a
+                                href="assets/img/portfolio/banners/2.jpg"
+                                data-lightbox="gallery"
+                            >
+                                <img
+                                    src="assets/img/portfolio/banners/2.jpg"
+                                    alt=""
+                                />
+                            </a>
+                            </li>
+                        <li class="gallery-item">
+                            <a
+                                href="assets/img/portfolio/banners/3.webp"
+                                data-lightbox="gallery"
+                            >
+                                <img
+                                    src="assets/img/portfolio/banners/3.webp"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                             <li class="gallery-item">
+                            <a
+                                href="assets/img/portfolio/banners/4.webp"
+                                data-lightbox="gallery"
+                            >
+                                <img
+                                    src="assets/img/portfolio/banners/4.webp"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+<li class="gallery-item">
+                            <a
+                                href="assets/img/portfolio/banners/5.webp"
+                                data-lightbox="gallery"
+                            >
+                                <img
+                                    src="assets/img/portfolio/banners/5.webp"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                        <li class="gallery-item">
+                            <a
+                                href="assets/img/portfolio/banners/6.webp"
+                                data-lightbox="gallery"
+                            >
+                                <img
+                                    src="assets/img/portfolio/banners/6.webp"
+                                    alt=""
+                                />
+                            </a>
+                            </li>
+                        <li class="gallery-item">
+                            <a
+                                href="assets/img/portfolio/banners/gif2.gif"
+                                data-lightbox="gallery"
+                            >
+                                <img
+                                    src="assets/img/portfolio/banners/gif2.gif"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                             <li class="gallery-item">
+                            <a
+                                href="assets/img/portfolio/banners/gif3.gif"
+                                data-lightbox="gallery"
+                            >
+                                <img
+                                    src="assets/img/portfolio/banners/gif3.gif"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+<li class="gallery-item">
+                            <a
+                                href="assets/img/portfolio/banners/GIF4.gif"
+                                data-lightbox="gallery"
+                            >
+                                <img
+                                    src="assets/img/portfolio/banners/GIF4.gif"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                        <li class="gallery-item">
+                            <a
+                                href="assets/img/portfolio/banners/gif5.gif"
+                                data-lightbox="gallery"
+                            >
+                                <img
+                                    src="assets/img/portfolio/banners/gif5.gif"
+                                    alt=""
+                                />
+                            </a>
+                            </li>
+                        <li class="gallery-item">
+                            <a
+                                href="assets/img/portfolio/banners/GIF6.gif"
+                                data-lightbox="gallery"
+                            >
+                                <img
+                                    src="assets/img/portfolio/banners/GIF6.gif"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
+                             <li class="gallery-item">
+                            <a
+                                href="assets/img/portfolio/banners/GIF7.gif"
+                                data-lightbox="gallery"
+                            >
+                                <img
+                                    src="assets/img/portfolio/banners/GIF7.gif"
+                                    alt=""
+                                />
+                            </a>
+                        </li>
 
-          
-            </div>
 
-            <div class="c2">
-         
-                <div class="c2-item">
-                  <img src="bh.gif" alt="">
-                  <div class="layer"></div>
+
+                      </ul>
+
+                   
+                    </div>
                 </div>
-                
-                <div class="c2-item">
-                  <img src="gif2.gif" alt="">
-                  <div class="layer"></div>
-                </div>
-              </div>
-                   <div class="c2">
-         
-                <div class="c2-item">
-                  <img src="gif3.gif" alt="">
-                  <div class="layer"></div>
-                </div>
-                
-                <div class="c2-item">
-                  <img src="GIF4.gif" alt="">
-                  <div class="layer"></div>
-                </div>
-              </div>
-    <div class="c2">
-         
-                <div class="c2-item">
-                  <img src="gif5.gif" alt="">
-                  <div class="layer"></div>
-                </div>
-                
-                <div class="c2-item">
-                  <img src="GIF6.gif" alt="">
-                  <div class="layer"></div>
-                </div>
-              </div>
-
-                  <div class="c2">
-         
-                <div class="c2-item">
-                  <img src="GIF7.gif" alt="">
-                  <div class="layer"></div>
-                </div>
-                
-                <div class="c2-item">
-                  <img src="gif8.gif" alt="">
-                  <div class="layer"></div>
-                </div>
-              </div>
-
-          
-            <div class="c1">
-                <img src="asobu2.jpg" alt="">
-                <div class="layer">
-                </div>
-            </div>
-
-           
-            </div>
-        </div>
-
-        <a href="index.html#portfolio"class="footer-link"> <i class='bx bx-chevron-left'> </i> </a>
-
-              
-            </div>
-          </div>
-        </div>
-        
-
-                     
-
-        
-       
-                </div>
-            </div>
-
-           
-           
-    </div>
-   </div>
-   
-   
-
-</body>
+            </section>
+        </main>
+        <script src="./assets/js/lightbox.min.js"></script>
+    </body>
 </html>
